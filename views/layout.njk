@@ -2,7 +2,11 @@
 <html>
 
     <head>
-        <title>Matheus Ferreira</title> 
+        
+        {% block head %}
+
+        {% endblock %}
+
         <link rel="stylesheet" href="/styles.css">
     </head>
 
@@ -14,18 +18,17 @@
             </div>
         </header>
 
-        <div id="wrapper">
-            <img src="https://scontent-gru2-2.xx.fbcdn.net/v/t1.0-9/p960x960/78137805_2249289121844149_2610958843131199488_o.jpg?_nc_cat=105&_nc_ohc=ypx3B8OZULYAX9l5LJh&_nc_ht=scontent-gru2-2.xx&_nc_tp=6&oh=7e2db25c457d686473096526861aca1b&oe=5ECB00E3" alt="Matheus Ferreira">
-            <h1>Matheus Ferreira</h1>
-            <h2>Desenvolvedor - Aquanima</h2>
-            <p>Desenvolvedor full-stack Java e banco de dados SQL, colaborador da <a href="https://www.aquanima.com/en/" target="_blank">Aquanima Brasil</a></p>
-        </div>
+        {% block content %}
+
+        {% endblock %}
 
         <div id="links-footer" class="links">
             <a href="https://github.com/ledoctah" target="_blank">Github</a>
             <a href="https://twitter.com/ledoctah" target="_blank">Twitter</a>
             <a href="https://www.linkedin.com/in/ferreira-matheus/" target="_blank">Linkedin</a>
         </div>
+
+        <script src="scripts.js"></script>
 
     </body>
 
