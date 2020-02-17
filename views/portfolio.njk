@@ -1,12 +1,8 @@
 {% extends "layout.njk" %}
 
 {% block head %}
-
-    <head>
         <title>Portfolio - Matheus Ferreira</title>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    </head>
-
 {% endblock %}
 
 {% block content %}
@@ -16,85 +12,23 @@
 
         <section class="cards">
 
-            <div class="card" id="fJ9rUzIMcZQ">
-                <div class="card_image-container">
-                    <img src="https://img.youtube.com/vi/fJ9rUzIMcZQ/maxresdefault.jpg" alt="Bohemian Rhapsody">
-                </div>
-                <div class="card_content">
-                    <p>Bohemian Rhapsody | Queen</p>
-                </div>
-                <div class="card_info">
-                    <p> 6min</p>
-                    <p class="card_price">Free</p>
-                </div>
-            </div>
+            {% for item in items %}
 
-            <div class="card" id="DyDfgMOUjCI">
-                <div class="card_image-container">
-                    <img src="https://img.youtube.com/vi/DyDfgMOUjCI/maxresdefault.jpg" alt="Bad Guy">
+                <div class="card" id="{{item.id}}">
+                    <div class="card_image-container">
+                        <img src="https://img.youtube.com/vi/{{item.id}}/maxresdefault.jpg" alt="Imagem de {{item.title}}">
+                    </div>
+                    <div class="card_content">
+                        <p>{{item.title}}</p>
+                    </div>
+                    <div class="card_info">
+                        <p>{{item.duration}}</p>
+                        <p class="card_price">{{item.price}}</p>
+                    </div>
                 </div>
-                <div class="card_content">
-                    <p>Bad Guy | Billie Elish</p>
-                </div>
-                <div class="card_info">
-                    <p> 3min</p>
-                    <p class="card_price">Free</p>
-                </div>
-            </div>
 
-            <div class="card" id="N2Y2vQ-1m7M">
-                <div class="card_image-container">
-                    <img src="https://img.youtube.com/vi/N2Y2vQ-1m7M/maxresdefault.jpg" alt="Lalala">
-                </div>
-                <div class="card_content">
-                    <p>Lalala | bbno$</p>
-                </div>
-                <div class="card_info">
-                    <p> 3min</p>
-                    <p class="card_price">Free</p>
-                </div>
-            </div>
-
-            <div class="card" id="LL-gyhZVvx0">
-                <div class="card_image-container">
-                    <img src="https://img.youtube.com/vi/LL-gyhZVvx0/maxresdefault.jpg" alt="Doin' It Right">
-                </div>
-                <div class="card_content">
-                    <p>Doin' It Right | Daft Punk</p>
-                </div>
-                <div class="card_info">
-                    <p> 4min</p>
-                    <p class="card_price">Free</p>
-                </div>
-            </div>
-
-            <div class="card" id="59zs16-G7ZM">
-                <div class="card_image-container">
-                    <img src="https://img.youtube.com/vi/59zs16-G7ZM/maxresdefault.jpg" alt="Oh No!">
-                </div>
-                <div class="card_content">
-                    <p>Oh No! | Grandson</p>
-                </div>
-                <div class="card_info">
-                    <p> 3min</p>
-                    <p class="card_price">Free</p>
-                </div>
-            </div>
-
-            <div class="card" id="IPZYid3SfMQ">
-                <div class="card_image-container">
-                    <img src="https://img.youtube.com/vi/IPZYid3SfMQ/maxresdefault.jpg" alt="olha p oclin">
-                </div>
-                <div class="card_content">
-                    <p>Olha p oclin | Sidoka</p>
-                </div>
-                <div class="card_info">
-                    <p> 4min</p>
-                    <p class="card_price">Free</p>
-                </div>
-            </div>
+            {%endfor%}
         </section>
-
         <div class="modal-overlay">
             <div class="modal">
                 <a class="close-modal">

@@ -75,6 +75,10 @@ header {
     color:var(--color-green);
 }
 
+#links-footer {
+    margin-top: 30px;
+}
+
 #links-footer a{
     border-bottom: 1px solid var(--color-green);
 }
@@ -98,7 +102,6 @@ header {
 .cards {
     max-width: 800px;
     margin: 0 auto;
-    margin-bottom: 32px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px
@@ -106,6 +109,7 @@ header {
 
 .card {
     background-color: var(--color-rocket);
+    display: grid;
 }
 
 .card_image-container img {
@@ -114,12 +118,13 @@ header {
 
 .card_content,
 .card_info {
-    padding: 24px
+    padding: 24px;
 }
 
 .card_info {
     display:grid;
     grid-template-columns: 1fr 1fr;
+    align-items: center;
 }
 
 .card_price {
