@@ -3,7 +3,8 @@ module.exports = [
         id: "fJ9rUzIMcZQ",
         title: "Bohemian Rhapsody | Queen",
         duration: "6min",
-        price: "Free"
+        price: "Free",
+        featured: true
     },
     {
         id: "DyDfgMOUjCI",
@@ -15,7 +16,8 @@ module.exports = [
         id: "N2Y2vQ-1m7M",
         title: "Lalala | bbno$",
         duration: "3min",
-        price: "Free"
+        price: "Free",
+        featured: true
     },
     {
         id: "LL-gyhZVvx0",
@@ -33,6 +35,7 @@ module.exports = [
         id: "IPZYid3SfMQ",
         title: "Olha p oclin | Sidoka",
         duration: "4min",
-        price: "Free"
+        price: "Free",
+        featured: true
     }
 ];

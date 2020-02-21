@@ -104,7 +104,8 @@ header {
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px
+    gap: 20px;
+    cursor: pointer;
 }
 
 .card {
@@ -174,4 +175,42 @@ iframe {
     position: absolute;
     top: 5%;
     left: 0;
+}
+
+/* === FEATURED === */
+.featured-wrapper.card_image-container {
+    position: relative;
+}
+
+.featured {
+    background-color: #f7d05f;
+    color: #111;
+    padding: 2px 8px;
+    position: absolute;
+    right: 5px;
+    top: -10px;
+    border-radius: 16px;
+}
+
+/* === VIDEO PAGE === */
+.video {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.video .card {
+    cursor: initial;
+}
+
+.card_video-container {
+    position: relative;
+    width: 100%;
+    padding-top: 62.5%;
+}
+
+.card_video-container iframe {
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    top: 0;
 }
